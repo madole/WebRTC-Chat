@@ -1,0 +1,22 @@
+script(src='js/playerScript.js')
+extends layout
+block content
+  .player Player: 
+    span 
+      = user
+  .user-id User Id: 
+    span
+    
+  .connected-peer Connected Peer:
+    span
+  
+  .messages  
+    .messages-label Messages
+    .messages-content
+      
+  input(type='text' class='chat-message')
+  button.send Send
+      
+  button.connect Connect
+  .req-peer 
+    = peer
